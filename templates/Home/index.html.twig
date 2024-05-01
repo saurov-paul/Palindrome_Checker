@@ -1,0 +1,33 @@
+{% extends'base.html.twig' %}
+{% block title %}Home
+{% endblock %}
+{% block body %}
+
+	{% block header %}
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Palindrome</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{{path('Home')}}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{path('Palindrome')}}">Palindrome</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+{% endblock %}
+
+<div class="container">
+	<h2>Hello Welcome to Palindrome Cheaker</h2>
+	<p>if you want to check Palindrome click bellow button</p>
+	<a href="{{path('Palindrome')}}" class="btn btn-primary">Check Palindrome</a>
+
+
+</div>{% endblock %}
